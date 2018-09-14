@@ -1088,7 +1088,9 @@ body .markdown-body
 <h1 id="mobius">mobius<a class="headerlink" href="#mobius" title="Permanent link"></a></h1>
 <p>沈阳网络赛的两道
 G
-用 [(m,i)==1] 和  $$\sum_{d\mid (m,i)}\mu(d)$$ 等价的性质
+用 [(m,i)==1] 和<br />
+$$\sum_{d\mid (m,i)}\mu(d)$$ 
+等价的性质
 然后交换一下次序
 <div class="codehilite"><pre><span class="cp">#include&lt;bits/stdc++.h&gt;</span>
 
@@ -1136,8 +1138,10 @@ G
 </pre></div>
 C
 把外面的交换次序得到(n-i+1)f(i)，
-然后用上
-$$\lambda(n)=\sum_{d^2\mid n}\mu(n/d)\quad\text{and}\quad\mu^2(n)=\sum_{d^2\mid n}\mu(d)$$</p>
+然后用上</p>
+<p>$$
+\lambda(n)=\sum_{d^2\mid n}\mu(n/d)\quad\text{and}\quad\mu^2(n)=\sum_{d^2\mid n}\mu(d)
+$$</p>
 <p><a href="https://math.stackexchange.com/questions/1053000/prove-lambdan-sum-d2n-mun-d2-and-mu2n-sum-d2n-mud">click this for proof</a>
 右边这个公式 和C题一样再交换一下就演出来了</p>
 <p>对不起我就是个傻逼，写个筛法写了三处错误我也是佩服我自己。
