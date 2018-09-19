@@ -58,6 +58,18 @@
             {% endfor %}
           </ul>
         </nav>
+        
+        <!-- 数学公式 -->
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {
+                    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                    inlineMath: [['$','$']]
+                }
+            });
+        </script>
+
       </header>
       <hr>
 
@@ -65,29 +77,12 @@
 
       <hr>
       <footer class="colophon colophon--{{ page_type }}">
-        <span class="colophon__statement">This blog is powered by Jekyll.</span>
-        <span class="colophon__statement"><a href="{{ site.repo }}" target="_blank">Source code</a> available under the MIT License.</span>
-        <span class="colophon__statement">All original writing licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>.</span>
+          <span class="colophon__statement">This blog is powered by Jekyll.</span>
+          <span class="colophon__statement"><a href="{{ site.repo }}" target="_blank">Source code</a> available under the MIT License.</span>
+          <span class="colophon__statement">All original writing licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>.</span>
       </footer>
     </div>
 
     <script src="{{ site.baseurl }}/site.js"></script>
-    
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
-    <!-- mathjax config similar to math.stackexchange -->
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-    jax: ["input/TeX", "output/HTML-CSS"],
-    tex2jax: {
-        inlineMath: [ ['$', '$'] ],
-        displayMath: [ ['$$', '$$']],
-        processEscapes: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
-    messageStyle: "none",
-    "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
-    });
-    </script>
-
   </body>
 </html>
