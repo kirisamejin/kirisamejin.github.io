@@ -3,6 +3,8 @@
 #######################
 
 markdown: kramdown
+highlighter: rouge
+
 title: kirisamejin                             # used in <title> tag & site header
 author: Johnny Bravo                        # used in a <meta> tag & /feed.xml
 description: >                              # used in a <meta> tag & /feed.xml
