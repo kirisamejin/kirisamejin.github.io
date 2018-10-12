@@ -5,13 +5,13 @@ category:
 tags: [数论]
 ---
 
-###二次剩余
+### 二次剩余
 
 > ##### p是一个奇质数且a不被p整除那么同余方程组$x^2\equiv a(mod p)$要么无解要么有两个非同余解
 proof. 如果$x_0$是一个解，那么有$(-x_0)^2\equiv (x_0)^2\equiv a$,$-x_0$是一个解。（因为$(-x_0)\equiv (x_0) \rightarrow p\mid 2x_0 $矛盾）
 如果有另外一个解$x_1$$(x_0)^2\equiv (x_1)^2 \rightarrow (x_0-x_1)(x_0+x_1)\equiv 0 \to p\mid (x_0-x_1) \| p\mid (x_0+x_1) \to x_0\equiv x_1 \| x_0 \equiv -x_1$ 因此只有两个非同余解
 
->#####p是一个奇质数，在$1,2,...,p-1$中恰好有$\frac{(p-1)}{2}$个二次剩余和$\frac{(p-1)}{2}$个非二次剩余
+>##### p是一个奇质数，在$1,2,...,p-1$中恰好有$\frac{(p-1)}{2}$个二次剩余和$\frac{(p-1)}{2}$个非二次剩余
 >proof. 因为每个a（$x^2\equiv a(mod p)$）要么对应2个数要么对应0个数，而又有1，2，p-1这些数的平方，所以这些平方有(p-1)/2个不同的值，这些值为二次剩余，剩下的(p-1)/2为非二次剩余简化
 
 [//]: # (This may be the most platform independent comment)
